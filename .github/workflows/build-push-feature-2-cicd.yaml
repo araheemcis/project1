@@ -28,7 +28,7 @@ jobs:
       with:
          push: true
          tags: |
-           "${{ github.repository }}:${{ github.ref_name }}"
+           "${{ github.repository }}:${{ github.ref_name }}-{{ github.run_number }}"
 
 #updating the helm manifests files
 
