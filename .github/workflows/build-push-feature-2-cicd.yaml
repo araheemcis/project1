@@ -42,7 +42,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v4
       with:
-        ref: master
+        ref: feature-2
 
     - name: "Get the current branch"
       run: |
