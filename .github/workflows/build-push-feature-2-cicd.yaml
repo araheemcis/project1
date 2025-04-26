@@ -51,7 +51,7 @@ jobs:
     - name: Update Image Tag Values in values.yaml
       run: |
         chart_dir="helm/project1-chart"
-        new_image_tag=${{ github.ref_name }}
+        new_image_tag="${{ github.ref_name }}.${{ github.run_id }}"
 
         # Update the values.yaml file with the new image tag
         sed -i "s/^  tag: .*/  tag: $new_image_tag/" "$chart_dir/values.yaml"
