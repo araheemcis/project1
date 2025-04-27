@@ -8,8 +8,8 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
- # - host: "calculationapps.com"
-  - http:
+  - host: calculationapps.com
+     http:
       paths:
       - pathType: Prefix
         path: "/{{ .Release.Name }}/"
