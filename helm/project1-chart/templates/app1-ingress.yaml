@@ -4,11 +4,12 @@ metadata:
   name: {{ .Release.Name }}-ingress
   namespace: {{ .Values.namespace }}
   annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: "calculationapps.com"
-    http:
+ # - host: "calculationapps.com"
+  - http:
       paths:
       - pathType: Prefix
         path: "/{{ .Release.Name }}/"
