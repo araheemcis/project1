@@ -11,11 +11,7 @@ image:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-<<<<<<< HEAD
-  tag: feature-2.14686354048
-=======
-  tag: feature-2
->>>>>>> origin
+  tag: feature-2.14696526459
 
 # Namespace
 #namespace: project1-dev
