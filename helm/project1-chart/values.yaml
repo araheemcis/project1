@@ -14,7 +14,8 @@ image:
   tag: feature-2.14686354048
 
 # Namespace
-namespace: project1-dev
+#namespace: project1-dev
+namespace: default
 
 # nodePort
 nodePort: 30097
