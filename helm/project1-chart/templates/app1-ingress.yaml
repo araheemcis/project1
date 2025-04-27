@@ -9,7 +9,7 @@ spec:
   ingressClassName: nginx
   rules:
   - host: calculationapps.com
-     http:
+    http:
       paths:
       - pathType: Prefix
         path: "/{{ .Release.Name }}/"
