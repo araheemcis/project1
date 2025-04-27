@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Name }}-svc
   namespace: {{ .Values.namespace }}
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
      app: {{ .Values.applabel }}
   ports:
@@ -15,4 +15,4 @@ spec:
       # Optional field
       # By default and for convenience, the Kubernetes control plane
       # will allocate a port from a range (default: 30000-32767)
-      nodePort: {{ .Values.nodePort }}
+#      nodePort: {{ .Values.nodePort }}
