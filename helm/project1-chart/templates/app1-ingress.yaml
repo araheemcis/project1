@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: calculationapps.com
+  - host: calculationapps-dev.com
     http:
       paths:
       - pathType: Prefix
